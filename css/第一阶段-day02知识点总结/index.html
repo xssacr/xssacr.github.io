@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-mac-osx.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.ico?v=5.1.4">
+
+
+
+
+
+
+  <meta name="keywords" content="CSS基础语法,选择器,选择器的权重," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="css 基础 (casading style sheet) 层叠样式表 所有的 css 代码，都必须放在 css样式表   css 语法选择器{属性：属性值;属性：属性值;} 每一对属性和属性值组成了一条声明 样式表分类 内部样式表 外部样式表rel&#x3D;&amp;quot;stylesheet&amp;quot; 的意思就是建立和css的关联性，同时加载 link和@import的区别(整理)   内联样式表(行内">
+<meta name="keywords" content="CSS基础语法,选择器,选择器的权重">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第一阶段-day02知识点总结">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;CSS&#x2F;%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5-day02%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93&#x2F;index.html">
+<meta property="og:site_name" content="小赛赛爱吃肉">
+<meta property="og:description" content="css 基础 (casading style sheet) 层叠样式表 所有的 css 代码，都必须放在 css样式表   css 语法选择器{属性：属性值;属性：属性值;} 每一对属性和属性值组成了一条声明 样式表分类 内部样式表 外部样式表rel&#x3D;&amp;quot;stylesheet&amp;quot; 的意思就是建立和css的关联性，同时加载 link和@import的区别(整理)   内联样式表(行内">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-12-13T09:22:52.534Z">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/CSS/第一阶段-day02知识点总结/"/>
+
+
+
+
+
+  <title>第一阶段-day02知识点总结 | 小赛赛爱吃肉</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">小赛赛爱吃肉</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Record Life and Code...</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/CSS/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5-day02%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="韩赛">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://img.mp.itc.cn/q_mini,c_zoom,w_640/upload/20161221/c495640d0fc24a91b9c95dc0d54b6002_th.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小赛赛爱吃肉">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">第一阶段-day02知识点总结</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-13T17:18:13+08:00">
+                2019-12-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/CSS/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5-day02%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/CSS/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5-day02%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.7k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  6
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="css-基础-casading-style-sheet-层叠样式表"><a href="#css-基础-casading-style-sheet-层叠样式表" class="headerlink" title="css 基础 (casading style sheet) 层叠样式表"></a>css 基础 (casading style sheet) 层叠样式表</h2><blockquote>
+<p>所有的 css 代码，都必须放在 css样式表 </p>
+</blockquote>
+<h3 id="css-语法"><a href="#css-语法" class="headerlink" title="css 语法"></a>css 语法</h3><p><code>选择器{属性：属性值;属性：属性值;}</code> 每一对属性和属性值组成了一条<code>声明</code></p>
+<h3 id="样式表分类"><a href="#样式表分类" class="headerlink" title="样式表分类"></a>样式表分类</h3><ul>
+<li>内部样式表</li>
+<li>外部样式表<code>rel=&quot;stylesheet&quot; 的意思就是建立和css的关联性</code>，同时加载<ul>
+<li>link和@import的区别(整理)</li>
+</ul>
+</li>
+<li>内联样式表(行内样式表)</li>
+</ul>
+<p><strong>样式表优先级(权重)</strong></p>
+<blockquote>
+<p>内联样式表权重最高 <br><br>内部样式表和外部样式表的权重和书写顺序有关，后写的会把前写的样式覆盖(覆盖相同样式，不同的样式会继续执行);<br><br>如果一个属性的属性值后面添加 <code>!important</code> 表示权重最高</p>
+</blockquote>
+<p><strong>css样式表的层叠性</strong></p>
+<blockquote>
+<p>只要产生权重关系，必然存在 css 层叠。<br><br>如果样式相同，产生冲突，后写的会把前写的覆盖 <br><br>不同的样式会继续执行</p>
+</blockquote>
+<blockquote>
+<p>开发者样式 &gt; 读者样式 &gt; 浏览器样式(默认样式) <br><br>内联样式表 &gt; 外部/内部样式表(内部和外部的样式表和顺序有关) <br><br>id选择器(100)&gt; class 选择器(10) &gt; 标签选择器(1)</p>
+</blockquote>
+<h3 id="css-选择器"><a href="#css-选择器" class="headerlink" title="css 选择器"></a>css 选择器</h3><ul>
+<li><p>类型选择符(标签选择符)</p>
+<ul>
+<li><code>标签名{css语句}</code> (选择页面中所有该标签)</li>
+<li><blockquote>
+<p>当想统一 某个标签样式的时候可以使用 <code>类型选择符</code></p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>当清除某个标签默认样式的时候也可以使用 <code>类型选择符</code></p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>id 选择符</p>
+<ul>
+<li><code>&lt;标签 id=&quot;名称&quot;&gt;&lt;/标签&gt;  #名称{css语句}</code></li>
+<li>每个id在一个页面中只能出现一次</li>
+<li><blockquote>
+<p>id 名用来划分网页的<code>外围结构</code> </p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>class 选择符 (类选择符)</p>
+<ul>
+<li><code>&lt;标签 class=&quot;name&quot;&gt;&lt;/标签&gt;</code>   <code>.name{css语法}</code></li>
+<li><blockquote>
+<p>一个元素可以有多个 class,并且可以重复出现(适合定义<code>一类样式</code>)</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>对 class 属性添加多个值的时候用 <code>空格</code> 隔开</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>包含选择符(后代选择器)</p>
+<ul>
+<li><blockquote>
+<p>通过父元素找子元素 <br></p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>语法： <code>父元素 子元素</code></p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>群组选择符(选择器分组)</p>
+<ul>
+<li><blockquote>
+<p>以逗号分隔的形式，把多个选择符分成一组，给整个组添加样式</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>语法:<code>选择器1,选择器2,选择器3{css语法}</code></p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>通配符选择器</p>
+<ul>
+<li><blockquote>
+<p><code>*</code> 选取页面中的所有元素(标签)</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>伪类</p>
+<ul>
+<li><p><code>a:link</code>       未访问</p>
+</li>
+<li><p><code>a:visited</code>    已访问</p>
+</li>
+<li><p><code>a:hover</code>      鼠标滑过时 (最常用,可以对其他元素使用)</p>
+<ul>
+<li><blockquote>
+<p>hover 可以更改自身和子元素的样式，不能更改父元素的样式</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>a:active     鼠标按下时</p>
+<ul>
+<li><blockquote>
+<p>如果四个属性都写的话，顺序不能改变</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>伪元素(伪对象)</p>
+<ul>
+<li><p><code>::after</code> </p>
+<ul>
+<li><blockquote>
+<p>通过 after 在某个元素内容的最后添加内容.（文本/图片….）<br></p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>需要配合 <code>content</code> 属性来实现</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p><code>::before</code></p>
+<ul>
+<li><blockquote>
+<p>通过 before 在某个元素内容的前面添加内容.（文本/图片….）<br></p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>需要配合 <code>content</code> 属性来实现</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p><code>:first-letter</code> 第一个字符</p>
+</li>
+<li><p><code>:first-line</code> 第一行</p>
+<ul>
+<li>如果 <code>first-letter</code> 和 <code>first-line</code> 同时存在的话,则都会生效</li>
+</ul>
+</li>
+<li><p><code>::selection</code>  选择的时候可以改变文本的颜色和背景颜色(必须写两个 ::)</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="选择符的权重"><a href="#选择符的权重" class="headerlink" title="选择符的权重"></a>选择符的权重</h4><blockquote>
+<p>id选择器(100)&gt; class 选择器(10) &gt; 标签选择器(1)</p>
+</blockquote>
+<p><strong>注意:</strong></p>
+<blockquote>
+<p><code>包含选择符的权重为权重之和</code> <br><br><code>群组选择器的权重不会发生改变，也就是不会相加</code> <br><br><code>伪类选择器的权重为  10</code><br><code>伪对象选择器的权重为  1</code></p>
+</blockquote>
+<h3 id="命名规范-class-id名"><a href="#命名规范-class-id名" class="headerlink" title="命名规范(class/id名)"></a>命名规范(class/id名)</h3><ul>
+<li><p>英文字母开头,下划线,字母,数字,连字符组合</p>
+</li>
+<li><p>语义化:显示能体现当前版块的内容  nres banner content</p>
+</li>
+<li><p>结构化: news-left  news-center news-right…</p>
+</li>
+<li><p><strong>起名的方法</strong>：</p>
+<ul>
+<li>驼峰式组合 newsLeft  newsCenter</li>
+<li>连字符组合 news-left  news-right</li>
+<li>下划线组合 news_left  news_right</li>
+</ul>
+</li>
+<li><p>在一个网页或者一个项目中尽量保持命名方式的一致性!</p>
+</li>
+</ul>
+<h3 id="css-属性"><a href="#css-属性" class="headerlink" title="css 属性"></a>css 属性</h3><blockquote>
+<p>属性值包括两种</p>
+</blockquote>
+<ul>
+<li>常规属性值: 100px red…</li>
+<li>法定属性值: 官方提供一些属性值，代表某个特殊的意义</li>
+</ul>
+<h4 id="1-文本相关的属性值"><a href="#1-文本相关的属性值" class="headerlink" title="1. 文本相关的属性值"></a>1. 文本相关的属性值</h4><ul>
+<li><p><code>font-size</code> : 文本大小 (16px 为标准字体大小)</p>
+<ul>
+<li><blockquote>
+<p>文本大小一般设置都用 <code>偶数</code>,最低不要小于 <code>10px</code>,pc断项目设置文本大小最小一般为 <code>12px</code></p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>字体单位:  em(相对大小,是根据父元素的 font-size 的值来确定的，默认情况下  <code>1em = 16px</code>)  pt(磅) <code>12px = 9pt</code></p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p><code>line-height</code>: 行高</p>
+<ul>
+<li>如果用 em 作为单位，则是相对于当前元素的 <code>font-size</code> 而定的.</li>
+<li>如果 <code>line-height</code> 设置为容器的高度,能使<code>单行文本</code>在容器中垂直居中</li>
+</ul>
+</li>
+<li><p><code>color</code> : 文本颜色</p>
+<ul>
+<li>颜色值: red  green  yellow….</li>
+<li>十六进制颜色： 0-9  A-F  </li>
+<li>rgb() 模式 0-255</li>
+</ul>
+</li>
+<li><p><code>font-family</code> : 字体</p>
+<ul>
+<li>font-family:字体1,字体2,字体3;  如果找不到字体1就去找字体2，如果字体2也找不到</li>
+<li>如果字体包含英文和中文，先写英文，然后再写中文(能保证不出什么问题)</li>
+</ul>
+</li>
+<li><p><code>font-weight</code>: 控制文本的加粗效果</p>
+<ul>
+<li>100 - 900   500 是一个分界线</li>
+<li><code>normal</code> 取消加粗</li>
+</ul>
+</li>
+<li><p><code>font-style</code>：文本的倾斜</p>
+<ul>
+<li><code>italic</code>  倾斜</li>
+<li><code>oblique</code> 倾斜</li>
+<li><code>normal</code>  取消倾斜</li>
+</ul>
+</li>
+<li><p><code>text-align</code> ： 文本对齐</p>
+<ul>
+<li><code>left</code>    左对齐</li>
+<li><code>right</code>   右对齐</li>
+<li><code>center</code>  居中对齐</li>
+<li><code>justify</code> 两端对齐</li>
+</ul>
+</li>
+<li><p><code>text-decoration</code> </p>
+<ul>
+<li>underline     下划线</li>
+<li>overline      上划线</li>
+<li>line-through  删除线</li>
+<li>none  一般给 a 和 u 标签清除默认下划线</li>
+</ul>
+</li>
+<li><p><code>text-indent</code> ： 首行缩进</p>
+<ul>
+<li>一般使用 em 作为单位</li>
+<li>悬挂式缩进 : 可以设置 负值，可以用来设置文字的隐藏</li>
+</ul>
+</li>
+<li><p><code>letter-spacing</code> : 字间距</p>
+</li>
+<li><p><code>word-spacing</code> : 词间距(识别的是空格)</p>
+</li>
+<li><p><code>text-transform</code> 设置文本大小写</p>
+<ul>
+<li><code>capitalize</code>  首字母大写</li>
+<li><code>uppercase</code> 转换成大写</li>
+<li><code>lowercase</code> 转换成小写</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-列表属性"><a href="#2-列表属性" class="headerlink" title="2. 列表属性"></a>2. 列表属性</h4><ul>
+<li><code>list-style:none</code>  (去掉列表符号)</li>
+</ul>
+<h4 id="3-边框属性"><a href="#3-边框属性" class="headerlink" title="3. 边框属性"></a>3. 边框属性</h4><ul>
+<li><p><code>border</code>: 边框(复合写法)</p>
+<ul>
+<li><code>border: 10px solid red;</code> </li>
+</ul>
+</li>
+<li><p><code>border-width</code>  边框的宽度</p>
+</li>
+<li><p><code>border-style</code>  边框的样式</p>
+</li>
+<li><p><code>border-color</code>  边框的颜色</p>
+</li>
+<li><blockquote>
+<p>边框可以单独设置每一条</p>
+</blockquote>
+<ul>
+<li><code>border-left</code> 设置左边框</li>
+<li><code>border-right</code> 设置右边框</li>
+<li><code>border-top</code> 设置上边框</li>
+<li><code>border-bottom</code> 设置下边框</li>
+</ul>
+</li>
+<li><blockquote>
+<p>以上三个值都可以设置单独方向上的 <code>width color style</code></p>
+</blockquote>
+<ul>
+<li>设置一个值的时候: <code>四个方向</code></li>
+<li>设置两个值的时候: <code>上下/左右</code></li>
+<li>设置三个值的时候: <code>上/左右/下</code></li>
+<li>设置四个值的时候: <code>上/右/下/左</code></li>
+</ul>
+</li>
+<li><blockquote>
+<p>使用边框制作三角形</p>
+</blockquote>
+<ul>
+<li>width/height设置为 0</li>
+<li>使用 border 把宽度撑开</li>
+<li>然后设置其他两个边框为透明就可以了<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="attribute">border-left</span>: <span class="number">20px</span> solid red;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="attribute">border-top</span>: <span class="number">20px</span> solid transparent;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="attribute">border-bottom</span>: <span class="number">20px</span> solid transparent;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+<h3 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h3></li>
+</ul>
+</li>
+<li><p>float (该属性有三个值  left   right   none)</p>
+</li>
+<li><p>浮动的元素不占位,会脱离文档流</p>
+</li>
+<li><p>如果元素有浮动，必须在外边套一层父元素</p>
+</li>
+<li><p>如果子元素有浮动，则父元素就必须设置高度,否则会造成<code>高度塌陷</code>的问题</p>
+</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      
+    </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CSS%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95-%E9%80%89%E6%8B%A9%E5%99%A8-%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%E6%9D%83%E9%87%8D/" rel="tag"># CSS基础语法,选择器,选择器的权重</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/html/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5-day01%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" rel="next" title="第一阶段-day01知识点总结">
+                <i class="fa fa-chevron-left"></i> 第一阶段-day01知识点总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/CSS/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5-day03%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" rel="prev" title="第一阶段-day03知识点总结">
+                第一阶段-day03知识点总结 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="http://img.mp.itc.cn/q_mini,c_zoom,w_640/upload/20161221/c495640d0fc24a91b9c95dc0d54b6002_th.jpeg"
+                alt="韩赛" />
+            
+              <p class="site-author-name" itemprop="name">韩赛</p>
+              <p class="site-description motion-element" itemprop="description">这是一个记录个人生活、coding、以及一些干货文章的个人技术博客...</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/xssacr" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i></a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.jianshu.com/u/c261023e0a1e" target="_blank" title="简书">
+                      
+                        <i class="fa fa-fw fa-heartbeat"></i></a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/actionActivity" target="_blank" title="CSDN">
+                      
+                        <i class="fa fa-fw fa-crosshairs"></i></a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://juejin.im/user/5cf11790f265da1baf7cd2d3" target="_blank" title="掘金">
+                      
+                        <i class="fa fa-fw fa-spinner"></i></a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                推荐阅读
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.jspang.com/" title="技术胖" target="_blank">技术胖</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.zhangxinxu.com/" title="张鑫旭" target="_blank">张鑫旭</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.alloyteam.com/nav/" title="Web前端导航" target="_blank">Web前端导航</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://ife.baidu.com/" title="百度前端技术学院" target="_blank">百度前端技术学院</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://devopen.club/" title="DevOpen.Club" target="_blank">DevOpen.Club</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#css-基础-casading-style-sheet-层叠样式表"><span class="nav-number">1.</span> <span class="nav-text">css 基础 (casading style sheet) 层叠样式表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#css-语法"><span class="nav-number">1.1.</span> <span class="nav-text">css 语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样式表分类"><span class="nav-number">1.2.</span> <span class="nav-text">样式表分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css-选择器"><span class="nav-number">1.3.</span> <span class="nav-text">css 选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#选择符的权重"><span class="nav-number">1.3.1.</span> <span class="nav-text">选择符的权重</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命名规范-class-id名"><span class="nav-number">1.4.</span> <span class="nav-text">命名规范(class/id名)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css-属性"><span class="nav-number">1.5.</span> <span class="nav-text">css 属性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-文本相关的属性值"><span class="nav-number">1.5.1.</span> <span class="nav-text">1. 文本相关的属性值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-列表属性"><span class="nav-number">1.5.2.</span> <span class="nav-text">2. 列表属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-边框属性"><span class="nav-number">1.5.3.</span> <span class="nav-text">3. 边框属性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浮动"><span class="nav-number">1.6.</span> <span class="nav-text">浮动</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-star"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">韩赛</span>
+
+  
+</div>
+
+<!--
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+-->
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      本站访客数:<i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      本站总访问量:<i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'DguUzDUM6AqhSLaACm0v5Oe9-gzGzoHsz',
+        appKey: 'WeEGeddmXigLU1VN1WRcoDT9',
+        placeholder: '请留下您宝贵的评论呀!',
+        avatar:'小明',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
