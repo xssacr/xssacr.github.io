@@ -262,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/CSS/%E7%AC%AC%E4%B8%80%E8%8A%82%E7%82%B9-day05%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/CSS/css%E5%8D%95%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E6%98%BE%E7%A4%BA%E7%9C%81%E7%95%A5%E5%8F%B7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="韩赛">
@@ -281,7 +281,217 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/CSS/%E7%AC%AC%E4%B8%80%E8%8A%82%E7%82%B9-day05%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" itemprop="url">第一节点-day05知识点总结</a></h1>
+                <a class="post-title-link" href="/CSS/css%E5%8D%95%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E6%98%BE%E7%A4%BA%E7%9C%81%E7%95%A5%E5%8F%B7/" itemprop="url">css单行文本溢出显示省略号</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-16T17:27:30+08:00">
+                2019-12-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/CSS/css%E5%8D%95%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E6%98%BE%E7%A4%BA%E7%9C%81%E7%95%A5%E5%8F%B7/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/CSS/css%E5%8D%95%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E6%98%BE%E7%A4%BA%E7%9C%81%E7%95%A5%E5%8F%B7/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  130
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="overflow"><a href="#overflow" class="headerlink" title="overflow"></a>overflow</h3><blockquote>
+<p>overflow 溢出属性(可以设置滚动条)</p>
+</blockquote>
+<p>  属性值: <code>scroll/auto/hidden/visiable(默认值)/inherit</code></p>
+<ul>
+<li><code>overflow-x</code></li>
+<li><code>overflow-y</code></li>
+</ul>
+<h3 id="white-space"><a href="#white-space" class="headerlink" title="white-space"></a>white-space</h3><blockquote>
+<p>空白空间的处理</p>
+</blockquote>
+<p>  属性值:</p>
+<pre><code>+ `normal` 默认值
++ `pre`  空白会被浏览器保留，并且不会自动换行
++ `pre-wrap` 空白会被浏览器保留，并且会换行
++ `pre-link` 
++ `nowrap` 不换行(用的最多)</code></pre><h3 id="单行文本溢出显示省略号-…"><a href="#单行文本溢出显示省略号-…" class="headerlink" title="单行文本溢出显示省略号(…)"></a>单行文本溢出显示省略号(…)</h3><ul>
+<li>overflow:hidden;</li>
+<li>white-space:nowrap;</li>
+<li>宽度不能被子元素撑开(必须设置固定宽度)</li>
+<li>text-overflow:ellipsis;(省略号显示)</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+    <div>
+      
+    </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/CSS/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5-day05%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="韩赛">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://img.mp.itc.cn/q_mini,c_zoom,w_640/upload/20161221/c495640d0fc24a91b9c95dc0d54b6002_th.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小赛赛爱吃肉">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/CSS/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5-day05%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" itemprop="url">第一阶段-day05知识点总结</a></h1>
         
 
         <div class="post-meta">
@@ -334,8 +544,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/CSS/%E7%AC%AC%E4%B8%80%E8%8A%82%E7%82%B9-day05%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/CSS/%E7%AC%AC%E4%B8%80%E8%8A%82%E7%82%B9-day05%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" itemprop="commentCount"></span>
+                <a href="/CSS/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5-day05%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/CSS/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5-day05%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1711,7 +1921,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1733,7 +1943,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
