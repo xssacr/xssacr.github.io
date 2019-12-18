@@ -71,7 +71,7 @@
 
 
 
-  <meta name="keywords" content="CSS," />
+  <meta name="keywords" content="布局," />
 
 
 
@@ -82,15 +82,15 @@
 
 
 
-<meta name="description" content="css 基础 (casading style sheet) 层叠样式表 所有的 css 代码，都必须放在 css样式表   css 语法选择器{属性：属性值;属性：属性值;} 每一对属性和属性值组成了一条声明 样式表分类 内部样式表 外部样式表rel&#x3D;&amp;quot;stylesheet&amp;quot; 的意思就是建立和css的关联性，同时加载 link和@import的区别(整理)   内联样式表(行内">
-<meta name="keywords" content="CSS">
+<meta name="description" content="自适应两栏布局(BFC) 思路：  设置左侧宽度固定 右侧不能设置宽度 然后设置左侧浮动 给右侧设置 overflow:hidden; 开启BFC  代码实现:  1&amp;lt;!DOCTYPE html&amp;gt;2&amp;lt;html lang&#x3D;&quot;en&quot;&amp;gt;34&amp;lt;head&amp;gt;5  &amp;lt;meta charset&#x3D;&quot;UTF-8&quot;&amp;gt;6  &amp;lt;meta name&#x3D;&quot;viewport&quot;">
+<meta name="keywords" content="布局">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS基础语法">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;posts&#x2F;38380&#x2F;index.html">
+<meta property="og:title" content="自适应两栏布局和双飞翼布局的写法">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;posts&#x2F;3835&#x2F;index.html">
 <meta property="og:site_name" content="小赛赛爱吃肉">
-<meta property="og:description" content="css 基础 (casading style sheet) 层叠样式表 所有的 css 代码，都必须放在 css样式表   css 语法选择器{属性：属性值;属性：属性值;} 每一对属性和属性值组成了一条声明 样式表分类 内部样式表 外部样式表rel&#x3D;&amp;quot;stylesheet&amp;quot; 的意思就是建立和css的关联性，同时加载 link和@import的区别(整理)   内联样式表(行内">
+<meta property="og:description" content="自适应两栏布局(BFC) 思路：  设置左侧宽度固定 右侧不能设置宽度 然后设置左侧浮动 给右侧设置 overflow:hidden; 开启BFC  代码实现:  1&amp;lt;!DOCTYPE html&amp;gt;2&amp;lt;html lang&#x3D;&quot;en&quot;&amp;gt;34&amp;lt;head&amp;gt;5  &amp;lt;meta charset&#x3D;&quot;UTF-8&quot;&amp;gt;6  &amp;lt;meta name&#x3D;&quot;viewport&quot;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-18T00:51:22.936Z">
+<meta property="og:updated_time" content="2019-12-18T11:01:00.736Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -121,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/posts/38380/"/>
+  <link rel="canonical" href="http://yoursite.com/posts/3835/"/>
 
 
 
 
 
-  <title>CSS基础语法 | 小赛赛爱吃肉</title>
+  <title>自适应两栏布局和双飞翼布局的写法 | 小赛赛爱吃肉</title>
   
 
 
@@ -301,7 +301,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/38380/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/3835/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="韩赛">
@@ -318,7 +318,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CSS基础语法</h1>
+          <h1 class="post-title" itemprop="name headline">自适应两栏布局和双飞翼布局的写法</h1>
         
 
         <div class="post-meta">
@@ -330,8 +330,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-13T17:18:13+08:00">
-                2019-12-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-18T19:00:06+08:00">
+                2019-12-18
               </time>
             
 
@@ -341,30 +341,6 @@
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/CSS/" itemprop="url" rel="index">
-                    <span itemprop="name">CSS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-             
-          
-          
 
           
             
@@ -373,8 +349,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/posts/38380/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/posts/38380/" itemprop="commentCount"></span>
+                <a href="/posts/3835/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/posts/3835/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -400,7 +376,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.2k
+                  753
                 </span>
               
 
@@ -437,188 +413,33 @@
       
 
       
-        <h2 id="css-基础-casading-style-sheet-层叠样式表"><a href="#css-基础-casading-style-sheet-层叠样式表" class="headerlink" title="css 基础 (casading style sheet) 层叠样式表"></a>css 基础 (casading style sheet) 层叠样式表</h2><blockquote>
-<p>所有的 css 代码，都必须放在 css样式表 </p>
-</blockquote>
-<h3 id="css-语法"><a href="#css-语法" class="headerlink" title="css 语法"></a>css 语法</h3><p><code>选择器{属性：属性值;属性：属性值;}</code> 每一对属性和属性值组成了一条<code>声明</code></p>
-<h3 id="样式表分类"><a href="#样式表分类" class="headerlink" title="样式表分类"></a>样式表分类</h3><ul>
-<li>内部样式表</li>
-<li>外部样式表<code>rel=&quot;stylesheet&quot; 的意思就是建立和css的关联性</code>，同时加载<ul>
-<li>link和@import的区别(整理)</li>
-</ul>
-</li>
-<li>内联样式表(行内样式表)</li>
-</ul>
-<p><strong>样式表优先级(权重)</strong></p>
-<blockquote>
-<p>内联样式表权重最高 <br><br>内部样式表和外部样式表的权重和书写顺序有关，后写的会把前写的样式覆盖(覆盖相同样式，不同的样式会继续执行);<br><br>如果一个属性的属性值后面添加 <code>!important</code> 表示权重最高</p>
-</blockquote>
-<p><strong>css样式表的层叠性</strong></p>
-<blockquote>
-<p>只要产生权重关系，必然存在 css 层叠。<br><br>如果样式相同，产生冲突，后写的会把前写的覆盖 <br><br>不同的样式会继续执行</p>
-</blockquote>
-<blockquote>
-<p>开发者样式 &gt; 读者样式 &gt; 浏览器样式(默认样式) <br><br>内联样式表 &gt; 外部/内部样式表(内部和外部的样式表和顺序有关) <br><br>id选择器(100)&gt; class 选择器(10) &gt; 标签选择器(1)</p>
-</blockquote>
-<h3 id="命名规范-class-id名"><a href="#命名规范-class-id名" class="headerlink" title="命名规范(class/id名)"></a>命名规范(class/id名)</h3><ul>
-<li><p>英文字母开头,下划线,字母,数字,连字符组合</p>
-</li>
-<li><p>语义化:显示能体现当前版块的内容  nres banner content</p>
-</li>
-<li><p>结构化: news-left  news-center news-right…</p>
-</li>
-<li><p><strong>起名的方法</strong>：</p>
-<ul>
-<li>驼峰式组合 newsLeft  newsCenter</li>
-<li>连字符组合 news-left  news-right</li>
-<li>下划线组合 news_left  news_right</li>
-</ul>
-</li>
-<li><p>在一个网页或者一个项目中尽量保持命名方式的一致性!</p>
-</li>
-</ul>
-<h3 id="css-属性"><a href="#css-属性" class="headerlink" title="css 属性"></a>css 属性</h3><blockquote>
-<p>属性值包括两种</p>
-</blockquote>
-<ul>
-<li>常规属性值: 100px red…</li>
-<li>法定属性值: 官方提供一些属性值，代表某个特殊的意义</li>
-</ul>
-<h4 id="1-文本相关的属性值"><a href="#1-文本相关的属性值" class="headerlink" title="1. 文本相关的属性值"></a>1. 文本相关的属性值</h4><ul>
-<li><p><code>font-size</code> : 文本大小 (16px 为标准字体大小)</p>
-<ul>
-<li><blockquote>
-<p>文本大小一般设置都用 <code>偶数</code>,最低不要小于 <code>10px</code>,pc断项目设置文本大小最小一般为 <code>12px</code></p>
-</blockquote>
-</li>
-<li><blockquote>
-<p>字体单位:  em(相对大小,是根据父元素的 font-size 的值来确定的，默认情况下  <code>1em = 16px</code>)  pt(磅) <code>12px = 9pt</code></p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p><code>line-height</code>: 行高</p>
-<ul>
-<li>如果用 em 作为单位，则是相对于当前元素的 <code>font-size</code> 而定的.</li>
-<li>如果 <code>line-height</code> 设置为容器的高度,能使<code>单行文本</code>在容器中垂直居中</li>
-</ul>
-</li>
-<li><p><code>color</code> : 文本颜色</p>
-<ul>
-<li>颜色值: red  green  yellow….</li>
-<li>十六进制颜色： 0-9  A-F  </li>
-<li>rgb() 模式 0-255</li>
-</ul>
-</li>
-<li><p><code>font-family</code> : 字体</p>
-<ul>
-<li>font-family:字体1,字体2,字体3;  如果找不到字体1就去找字体2，如果字体2也找不到</li>
-<li>如果字体包含英文和中文，先写英文，然后再写中文(能保证不出什么问题)</li>
-</ul>
-</li>
-<li><p><code>font-weight</code>: 控制文本的加粗效果</p>
-<ul>
-<li>100 - 900   500 是一个分界线</li>
-<li><code>normal</code> 取消加粗</li>
-</ul>
-</li>
-<li><p><code>font-style</code>：文本的倾斜</p>
-<ul>
-<li><code>italic</code>  倾斜</li>
-<li><code>oblique</code> 倾斜</li>
-<li><code>normal</code>  取消倾斜</li>
-</ul>
-</li>
-<li><p><code>text-align</code> ： 文本对齐</p>
-<ul>
-<li><code>left</code>    左对齐</li>
-<li><code>right</code>   右对齐</li>
-<li><code>center</code>  居中对齐</li>
-<li><code>justify</code> 两端对齐</li>
-</ul>
-</li>
-<li><p><code>text-decoration</code> </p>
-<ul>
-<li>underline     下划线</li>
-<li>overline      上划线</li>
-<li>line-through  删除线</li>
-<li>none  一般给 a 和 u 标签清除默认下划线</li>
-</ul>
-</li>
-<li><p><code>text-indent</code> ： 首行缩进</p>
-<ul>
-<li>一般使用 em 作为单位</li>
-<li>悬挂式缩进 : 可以设置 负值，可以用来设置文字的隐藏</li>
-</ul>
-</li>
-<li><p><code>letter-spacing</code> : 字间距</p>
-</li>
-<li><p><code>word-spacing</code> : 词间距(识别的是空格)</p>
-</li>
-<li><p><code>text-transform</code> 设置文本大小写</p>
-<ul>
-<li><code>capitalize</code>  首字母大写</li>
-<li><code>uppercase</code> 转换成大写</li>
-<li><code>lowercase</code> 转换成小写</li>
-</ul>
-</li>
-</ul>
-<h4 id="2-列表属性"><a href="#2-列表属性" class="headerlink" title="2. 列表属性"></a>2. 列表属性</h4><ul>
-<li><code>list-style:none</code>  (去掉列表符号)</li>
-</ul>
-<h4 id="3-边框属性"><a href="#3-边框属性" class="headerlink" title="3. 边框属性"></a>3. 边框属性</h4><ul>
-<li><p><code>border</code>: 边框(复合写法)</p>
-<ul>
-<li><code>border: 10px solid red;</code> </li>
-</ul>
-</li>
-<li><p><code>border-width</code>  边框的宽度</p>
-</li>
-<li><p><code>border-style</code>  边框的样式</p>
-</li>
-<li><p><code>border-color</code>  边框的颜色</p>
-</li>
-<li><blockquote>
-<p>边框可以单独设置每一条</p>
-</blockquote>
-<ul>
-<li><code>border-left</code> 设置左边框</li>
-<li><code>border-right</code> 设置右边框</li>
-<li><code>border-top</code> 设置上边框</li>
-<li><code>border-bottom</code> 设置下边框</li>
-</ul>
-</li>
-<li><blockquote>
-<p>以上三个值都可以设置单独方向上的 <code>width color style</code></p>
-</blockquote>
-<ul>
-<li>设置一个值的时候: <code>四个方向</code></li>
-<li>设置两个值的时候: <code>上下/左右</code></li>
-<li>设置三个值的时候: <code>上/左右/下</code></li>
-<li>设置四个值的时候: <code>上/右/下/左</code></li>
-</ul>
-</li>
-<li><blockquote>
-<p>使用边框制作三角形</p>
-</blockquote>
-<ul>
-<li>width/height设置为 0</li>
-<li>使用 border 把宽度撑开</li>
-<li>然后设置其他两个边框为透明就可以了<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="attribute">border-left</span>: <span class="number">20px</span> solid red;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="attribute">border-top</span>: <span class="number">20px</span> solid transparent;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  <span class="attribute">border-bottom</span>: <span class="number">20px</span> solid transparent;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
-<h3 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h3></li>
-</ul>
-</li>
-<li><p><code>float</code> (该属性有三个值  left   right   none)</p>
-</li>
-<li><p>浮动的特点:</p>
+        <p><strong>自适应两栏布局(BFC)</strong></p>
+<p>思路：</p>
 <ol>
-<li>浮动的元素不占位,会脱离文档流</li>
-<li>如果元素有浮动，必须在外边套一层父元素</li>
-<li>如果子元素有浮动，则父元素就必须设置高度,否则会造成<code>高度塌陷</code>的问题</li>
+<li>设置左侧宽度固定</li>
+<li>右侧不能设置宽度</li>
+<li>然后设置左侧浮动</li>
+<li>给右侧设置 <code>overflow:hidden;</code> 开启BFC</li>
 </ol>
-</li>
-</ul>
-
+<p>代码实现:<br>  <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">    * &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">      padding: 0;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">      margin: 0;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">    html,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">    body &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">      height: 100%;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line"><span class="css">    <span class="selector-class">.left-box</span> &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">      width: 200px;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">      height: 80%;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">      background-color: royalblue;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">      float: left;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line"><span class="css">    <span class="selector-class">.right-box</span> &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">      height: 100%;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line"><span class="css">      <span class="selector-tag">background-color</span>: <span class="selector-id">#ccc</span>;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line">      overflow: hidden;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">36</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"left-box"</span>&gt;</span>左侧<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">37</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"right-box"</span>&gt;</span>右侧<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">38</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">39</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">40</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></pre></td></tr></table></figure></p>
+<p><strong>双飞翼布局(BFC)</strong></p>
+<p>思路：</p>
+<ol>
+<li>左右两侧布局宽度固定</li>
+<li>中间版块不能设置宽度</li>
+<li>然后分别给左右两栏左右浮动</li>
+<li>中间版块设置 <code>overflow:hidden;</code> 开启BFC</li>
+</ol>
+<p>代码实现:<br>  <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">    * &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">      padding: 0;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">      margin: 0;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">    html,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">    body &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">      height: 100%;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line"><span class="css">    <span class="selector-class">.left-box</span>,</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line"><span class="css">    <span class="selector-class">.right-box</span> &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">      width: 100px;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">      height: 80%;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">      background-color: royalblue;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line"><span class="css">    <span class="selector-class">.left-box</span> &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">      float: left;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line"><span class="css">    <span class="selector-class">.right-box</span> &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line">      float: right;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line"><span class="css">    <span class="selector-class">.content-box</span> &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">36</span></pre></td><td class="code"><pre><span class="line">      height: 100%;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">37</span></pre></td><td class="code"><pre><span class="line">      background-color: gray;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">38</span></pre></td><td class="code"><pre><span class="line">      overflow: hidden;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">39</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">40</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">41</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">42</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">43</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">44</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"left-box"</span>&gt;</span>左侧<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">45</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"right-box"</span>&gt;</span>中间版块<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">46</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"content-box"</span>&gt;</span>右侧<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">47</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">48</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">49</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></pre></td></tr></table></figure></p>
+<p><strong>正宗双飞翼布局</strong></p>
+<p>思路：</p>
+<ol>
+<li>左右两侧的宽度固定，并且分别左右浮动</li>
+<li>中间版块不能设置宽度</li>
+<li>在中间区域下再写一层,同样不能设置宽度</li>
+<li>给中间区域的外边一层设置 两侧的 padding，让它把内层挤到中间</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"ie=edge"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">    * &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">      padding: 0;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">      margin: 0;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">    html,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">    body &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">      height: 100%;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line"><span class="css">    <span class="selector-class">.left-box</span>,</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line"><span class="css">    <span class="selector-class">.right-box</span> &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">      width: 200px;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">      height: 80%;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">      background-color: royalblue;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line"><span class="css">    <span class="selector-class">.left-box</span> &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">      float: left;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line"><span class="css">    <span class="selector-class">.right-box</span> &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line">      float: right;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line"><span class="css">    <span class="selector-class">.content-box</span> &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">36</span></pre></td><td class="code"><pre><span class="line">      height: 100%;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">37</span></pre></td><td class="code"><pre><span class="line">      background-color: gray;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">38</span></pre></td><td class="code"><pre><span class="line">      padding: 0 200px;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">39</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">40</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">41</span></pre></td><td class="code"><pre><span class="line"><span class="css">    <span class="selector-class">.box-con</span> &#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">42</span></pre></td><td class="code"><pre><span class="line">      height: 100%;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">43</span></pre></td><td class="code"><pre><span class="line">      background-color: pink;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">44</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">45</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">46</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">47</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">48</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">49</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"left-box"</span>&gt;</span>左侧<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">50</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"right-box"</span>&gt;</span>右侧<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">51</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"content-box"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">52</span></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box-con"</span>&gt;</span>中间版块内容区域<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">53</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">54</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">55</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">56</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></pre></td></tr></table></figure>
       
     </div>
     
@@ -647,7 +468,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/CSS/" rel="tag"><i class="fa fa-tag"></i> CSS</a>
+            <a href="/tags/%E5%B8%83%E5%B1%80/" rel="tag"><i class="fa fa-tag"></i> 布局</a>
           
         </div>
       
@@ -660,8 +481,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/posts/25772/" rel="next" title="HTML基础以及常用标签总结">
-                <i class="fa fa-chevron-left"></i> HTML基础以及常用标签总结
+              <a href="/posts/34259/" rel="next" title="BFC">
+                <i class="fa fa-chevron-left"></i> BFC
               </a>
             
           </div>
@@ -669,10 +490,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/posts/1325/" rel="prev" title="背景相关的样式和标准盒模型">
-                背景相关的样式和标准盒模型 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -753,17 +570,8 @@ var jiathis_config={
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -881,22 +689,6 @@ var jiathis_config={
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#css-基础-casading-style-sheet-层叠样式表"><span class="nav-number">1.</span> <span class="nav-text">css 基础 (casading style sheet) 层叠样式表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#css-语法"><span class="nav-number">1.1.</span> <span class="nav-text">css 语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样式表分类"><span class="nav-number">1.2.</span> <span class="nav-text">样式表分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命名规范-class-id名"><span class="nav-number">1.3.</span> <span class="nav-text">命名规范(class/id名)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css-属性"><span class="nav-number">1.4.</span> <span class="nav-text">css 属性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-文本相关的属性值"><span class="nav-number">1.4.1.</span> <span class="nav-text">1. 文本相关的属性值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-列表属性"><span class="nav-number">1.4.2.</span> <span class="nav-text">2. 列表属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-边框属性"><span class="nav-number">1.4.3.</span> <span class="nav-text">3. 边框属性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浮动"><span class="nav-number">1.5.</span> <span class="nav-text">浮动</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
