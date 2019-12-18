@@ -85,12 +85,12 @@
 <meta name="description" content="css 基础 (casading style sheet) 层叠样式表 所有的 css 代码，都必须放在 css样式表   css 语法选择器{属性：属性值;属性：属性值;} 每一对属性和属性值组成了一条声明 样式表分类 内部样式表 外部样式表rel&#x3D;&amp;quot;stylesheet&amp;quot; 的意思就是建立和css的关联性，同时加载 link和@import的区别(整理)   内联样式表(行内">
 <meta name="keywords" content="CSS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一阶段-day02知识点总结">
+<meta property="og:title" content="CSS基础语法">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;posts&#x2F;38380&#x2F;index.html">
 <meta property="og:site_name" content="小赛赛爱吃肉">
 <meta property="og:description" content="css 基础 (casading style sheet) 层叠样式表 所有的 css 代码，都必须放在 css样式表   css 语法选择器{属性：属性值;属性：属性值;} 每一对属性和属性值组成了一条声明 样式表分类 内部样式表 外部样式表rel&#x3D;&amp;quot;stylesheet&amp;quot; 的意思就是建立和css的关联性，同时加载 link和@import的区别(整理)   内联样式表(行内">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-16T12:57:07.715Z">
+<meta property="og:updated_time" content="2019-12-18T00:51:22.936Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -127,7 +127,7 @@
 
 
 
-  <title>第一阶段-day02知识点总结 | 小赛赛爱吃肉</title>
+  <title>CSS基础语法 | 小赛赛爱吃肉</title>
   
 
 
@@ -318,7 +318,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">第一阶段-day02知识点总结</h1>
+          <h1 class="post-title" itemprop="name headline">CSS基础语法</h1>
         
 
         <div class="post-meta">
@@ -400,7 +400,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.7k
+                  1.2k
                 </span>
               
 
@@ -416,7 +416,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  6
+                  4
                 </span>
               
             </div>
@@ -459,144 +459,6 @@
 </blockquote>
 <blockquote>
 <p>开发者样式 &gt; 读者样式 &gt; 浏览器样式(默认样式) <br><br>内联样式表 &gt; 外部/内部样式表(内部和外部的样式表和顺序有关) <br><br>id选择器(100)&gt; class 选择器(10) &gt; 标签选择器(1)</p>
-</blockquote>
-<h3 id="css-选择器"><a href="#css-选择器" class="headerlink" title="css 选择器"></a>css 选择器</h3><ul>
-<li><p>类型选择符(标签选择符)</p>
-<ul>
-<li><code>标签名{css语句}</code> (选择页面中所有该标签)</li>
-<li><blockquote>
-<p>当想统一 某个标签样式的时候可以使用 <code>类型选择符</code></p>
-</blockquote>
-</li>
-<li><blockquote>
-<p>当清除某个标签默认样式的时候也可以使用 <code>类型选择符</code></p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p>id 选择符</p>
-<ul>
-<li><code>&lt;标签 id=&quot;名称&quot;&gt;&lt;/标签&gt;  #名称{css语句}</code></li>
-<li>每个id在一个页面中只能出现一次</li>
-<li><blockquote>
-<p>id 名用来划分网页的<code>外围结构</code> </p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p>class 选择符 (类选择符)</p>
-<ul>
-<li><code>&lt;标签 class=&quot;name&quot;&gt;&lt;/标签&gt;</code>   <code>.name{css语法}</code></li>
-<li><blockquote>
-<p>一个元素可以有多个 class,并且可以重复出现(适合定义<code>一类样式</code>)</p>
-</blockquote>
-</li>
-<li><blockquote>
-<p>对 class 属性添加多个值的时候用 <code>空格</code> 隔开</p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p>包含选择符(后代选择器)</p>
-<ul>
-<li><blockquote>
-<p>通过父元素找子元素 <br></p>
-</blockquote>
-</li>
-<li><blockquote>
-<p>语法： <code>父元素 子元素</code></p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p>群组选择符(选择器分组)</p>
-<ul>
-<li><blockquote>
-<p>以逗号分隔的形式，把多个选择符分成一组，给整个组添加样式</p>
-</blockquote>
-</li>
-<li><blockquote>
-<p>语法:<code>选择器1,选择器2,选择器3{css语法}</code></p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p>通配符选择器</p>
-<ul>
-<li><blockquote>
-<p><code>*</code> 选取页面中的所有元素(标签)</p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p>伪类</p>
-<ul>
-<li><p><code>a:link</code>       未访问</p>
-</li>
-<li><p><code>a:visited</code>    已访问</p>
-</li>
-<li><p><code>a:hover</code>      鼠标滑过时 (最常用,可以对其他元素使用)</p>
-<ul>
-<li><blockquote>
-<p>hover 可以更改自身和子元素的样式，不能更改父元素的样式</p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p>a:active     鼠标按下时</p>
-<ul>
-<li><blockquote>
-<p>如果四个属性都写的话，顺序不能改变</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>伪元素(伪对象)</p>
-<ul>
-<li><p><code>::after</code> </p>
-<ul>
-<li><blockquote>
-<p>通过 after 在某个元素内容的最后添加内容.（文本/图片….）<br></p>
-</blockquote>
-</li>
-<li><blockquote>
-<p>需要配合 <code>content</code> 属性来实现</p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p><code>::before</code></p>
-<ul>
-<li><blockquote>
-<p>通过 before 在某个元素内容的前面添加内容.（文本/图片….）<br></p>
-</blockquote>
-</li>
-<li><blockquote>
-<p>需要配合 <code>content</code> 属性来实现</p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p><code>:first-letter</code> 第一个字符</p>
-</li>
-<li><p><code>:first-line</code> 第一行</p>
-<ul>
-<li>如果 <code>first-letter</code> 和 <code>first-line</code> 同时存在的话,则都会生效</li>
-</ul>
-</li>
-<li><p><code>::selection</code>  选择的时候可以改变文本的颜色和背景颜色(必须写两个 ::)</p>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="选择符的权重"><a href="#选择符的权重" class="headerlink" title="选择符的权重"></a>选择符的权重</h4><blockquote>
-<p>id选择器(100)&gt; class 选择器(10) &gt; 标签选择器(1)</p>
-</blockquote>
-<p><strong>注意:</strong></p>
-<blockquote>
-<p><code>包含选择符的权重为权重之和</code> <br><br><code>群组选择器的权重不会发生改变，也就是不会相加</code> <br><br><code>伪类选择器的权重为  10</code><br><code>伪对象选择器的权重为  1</code></p>
 </blockquote>
 <h3 id="命名规范-class-id名"><a href="#命名规范-class-id名" class="headerlink" title="命名规范(class/id名)"></a>命名规范(class/id名)</h3><ul>
 <li><p>英文字母开头,下划线,字母,数字,连字符组合</p>
@@ -746,13 +608,14 @@
 <h3 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h3></li>
 </ul>
 </li>
-<li><p>float (该属性有三个值  left   right   none)</p>
+<li><p><code>float</code> (该属性有三个值  left   right   none)</p>
 </li>
-<li><p>浮动的元素不占位,会脱离文档流</p>
-</li>
-<li><p>如果元素有浮动，必须在外边套一层父元素</p>
-</li>
-<li><p>如果子元素有浮动，则父元素就必须设置高度,否则会造成<code>高度塌陷</code>的问题</p>
+<li><p>浮动的特点:</p>
+<ol>
+<li>浮动的元素不占位,会脱离文档流</li>
+<li>如果元素有浮动，必须在外边套一层父元素</li>
+<li>如果子元素有浮动，则父元素就必须设置高度,否则会造成<code>高度塌陷</code>的问题</li>
+</ol>
 </li>
 </ul>
 
@@ -797,8 +660,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/posts/25772/" rel="next" title="第一阶段-day01知识点总结">
-                <i class="fa fa-chevron-left"></i> 第一阶段-day01知识点总结
+              <a href="/posts/25772/" rel="next" title="HTML基础以及常用标签总结">
+                <i class="fa fa-chevron-left"></i> HTML基础以及常用标签总结
               </a>
             
           </div>
@@ -919,7 +782,7 @@ var jiathis_config={
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -941,7 +804,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1032,7 +895,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#css-基础-casading-style-sheet-层叠样式表"><span class="nav-number">1.</span> <span class="nav-text">css 基础 (casading style sheet) 层叠样式表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#css-语法"><span class="nav-number">1.1.</span> <span class="nav-text">css 语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样式表分类"><span class="nav-number">1.2.</span> <span class="nav-text">样式表分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css-选择器"><span class="nav-number">1.3.</span> <span class="nav-text">css 选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#选择符的权重"><span class="nav-number">1.3.1.</span> <span class="nav-text">选择符的权重</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命名规范-class-id名"><span class="nav-number">1.4.</span> <span class="nav-text">命名规范(class/id名)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css-属性"><span class="nav-number">1.5.</span> <span class="nav-text">css 属性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-文本相关的属性值"><span class="nav-number">1.5.1.</span> <span class="nav-text">1. 文本相关的属性值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-列表属性"><span class="nav-number">1.5.2.</span> <span class="nav-text">2. 列表属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-边框属性"><span class="nav-number">1.5.3.</span> <span class="nav-text">3. 边框属性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浮动"><span class="nav-number">1.6.</span> <span class="nav-text">浮动</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#css-基础-casading-style-sheet-层叠样式表"><span class="nav-number">1.</span> <span class="nav-text">css 基础 (casading style sheet) 层叠样式表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#css-语法"><span class="nav-number">1.1.</span> <span class="nav-text">css 语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样式表分类"><span class="nav-number">1.2.</span> <span class="nav-text">样式表分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命名规范-class-id名"><span class="nav-number">1.3.</span> <span class="nav-text">命名规范(class/id名)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#css-属性"><span class="nav-number">1.4.</span> <span class="nav-text">css 属性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-文本相关的属性值"><span class="nav-number">1.4.1.</span> <span class="nav-text">1. 文本相关的属性值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-列表属性"><span class="nav-number">1.4.2.</span> <span class="nav-text">2. 列表属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-边框属性"><span class="nav-number">1.4.3.</span> <span class="nav-text">3. 边框属性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浮动"><span class="nav-number">1.5.</span> <span class="nav-text">浮动</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1063,7 +926,7 @@ var jiathis_config={
 </div>
 
 <div class="powered-by">
-<span class="post-count">博客全站共8.8k字</span>
+<span class="post-count">博客全站共11.9k字</span>
 </div>
 
 <!--
