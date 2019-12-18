@@ -458,7 +458,7 @@
       </tags>
   </entry>
   <entry>
-    <title>第一阶段-day03知识点总结</title>
+    <title>背景相关的样式和标准盒模型</title>
     <url>/posts/1325/</url>
     <content><![CDATA[<h3 id="背景属性"><a href="#背景属性" class="headerlink" title="背景属性"></a>背景属性</h3><ol>
 <li><p><code>background</code>: 复合式写法(简写)</p>
